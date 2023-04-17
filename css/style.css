@@ -371,7 +371,7 @@
   .link-footer:hover{
     color: grey;
   }
-  
+
   .boton-footer {
     color: #fff !important;
     padding: 0.5em 0.5em;
@@ -384,4 +384,63 @@
     outline-offset: 80px;
     text-shadow: 1px 1px 6px #fff;
   }
+
+  
+@media screen and (max-width: 1000px) {
+    .card {
+      width: 25%;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .card {
+      width: 30%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contenedor-bs-octubre {
+      flex-direction: column;
+    }
+    .contenedor-bs-octubre-texto {
+      width: 100%;
+    }
+  
+    .honolulu {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .card {
+      width: 45%;
+    }
+    .contenedor-cards {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+    .contenedor-texto-conf {
+      width: 60%;
+    }
+  }
+  
+  @media screen and (max-width: 522px) {
+    .container-fluid {
+      justify-content: center !important;
+    }
+    .navbar-nav {
+      align-items: center;
+  }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .card {
+      width: 55%;
+    }
+    .contenedor-texto-conf {
+      width: 80%;
+    }
+  }
+  
   
