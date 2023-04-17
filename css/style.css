@@ -213,4 +213,50 @@
   .div-texto-card {
     margin: 1rem;
   }
+
+  
+.contenedor-bs-octubre {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .contenedor-bs-octubre-texto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-start;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(53, 58, 64, 255);
+  }
+  
+  .honolulu {
+    width: 50%;
+  }
+  
+  .boton-octubre {
+    width: fit-content;
+    background: none;
+    border-radius: 7px;
+    border: 1px solid #dfe1d0;
+    color: #dfe1d0;
+  }
+  
+  .texto-bs-octubre {
+    color: #dfe1d0;
+    font-size: small;
+  }
+
+.boton-octubre {
+    color: rgba(255, 255, 255, 0.9) !important;
+    padding: 0.5em 1.2em;
+    position: relative;
+  }
+  .boton-octubre:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 2px 8px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+  }
+  
   
