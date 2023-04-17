@@ -139,3 +139,78 @@
     transition: all 0.2s ease;
   }
   
+  .primer-texto-oradores {
+    text-align: center;
+    font-size: small;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .texto-oradores {
+    text-align: center;
+  }
+  
+  .contenedor-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  
+  .botones-oradores {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .boton-javascript {
+    border-radius: 5px;
+    background-color: orange;
+    border: none;
+    font-weight: 600;
+    height: fit-content;
+    margin-right: 5px;
+  }
+  
+  .boton-react {
+    border-radius: 5px;
+    background-color: #239db0;
+    color: white;
+    border: none;
+    font-weight: 600;
+    height: fit-content;
+  }
+  
+  .boton-negocios {
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+    border: none;
+    font-weight: 600;
+    height: fit-content;
+    margin-right: 5px;
+  }
+  
+  .boton-startups {
+    border-radius: 5px;
+    background-color: rgba(208, 59, 74, 255);
+    color: white;
+    border: none;
+    font-weight: 600;
+    height: fit-content;
+  }
+  
+  .div-texto-card {
+    margin: 1rem;
+  }
+  
