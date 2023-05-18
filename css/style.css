@@ -385,6 +385,28 @@
     text-shadow: 1px 1px 6px #fff;
   }
 
+/*-------------------Compra-----------------------*/
+.text-compra-nav{
+  color: greenyellow;
+}
+
+.section-card-descuento{
+  gap: .3rem;
+  margin-top: 1.5rem;
+}
+
+.card-descuento{
+  width: 14%;
+}
+
+.tamaño-presentar{
+  font-size: small;
+  color: grey;
+}
+
+.palabra-venta{
+  font-size: small;
+}
   
 @media screen and (max-width: 1000px) {
     .card {
