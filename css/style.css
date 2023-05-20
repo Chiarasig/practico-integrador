@@ -384,7 +384,12 @@
 
 /*-------------------Compra-----------------------*/
 .nav-contenedor-compra{
-  height: 3rem;
+  height: 4rem;
+}
+
+.tittle-logo-compra{
+  width: 7rem;
+  margin-left: 6%;
 }
 
 .navbar-compra{
@@ -409,7 +414,7 @@
 }
 
 .card-descuento {
-  width: 14%;
+  width: 13rem;
 }
 
 .tamaño-presentar {
@@ -501,6 +506,12 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .form-compra {
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 522px) {
   .container-fluid {
     justify-content: center !important;
@@ -515,6 +526,15 @@
     width: 55%;
   }
   .contenedor-texto-conf {
+    width: 80%;
+  }
+  .form-compra {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .form-compra {
     width: 80%;
   }
 }
