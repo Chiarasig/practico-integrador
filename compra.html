@@ -39,14 +39,16 @@
             <ul class="navbar-nav menu3">
               <li class="nav-item">
                 <a
-                  class="nav-link titulo-nav "
+                  class="nav-link titulo-nav"
                   aria-current="page"
                   href="./index.html"
                   >La conferencia</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link titulo-nav" href="./index.html#oradores">Los oradores</a>
+                <a class="nav-link titulo-nav" href="./index.html#oradores"
+                  >Los oradores</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link titulo-nav" href="./index.html#lugar-fecha"
@@ -54,14 +56,14 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" href="./index.html#conviertete"
+                <a
+                  class="nav-link active text-white"
+                  href="./index.html#conviertete"
                   >Conviertete en orador</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-compra-nav" href="#"
-                  >Comprar tickets</a
-                >
+                <a class="nav-link text-compra-nav" href="#">Comprar tickets</a>
               </li>
             </ul>
           </div>
@@ -69,20 +71,28 @@
       </nav>
       <!-- ------------------------------------------------ -->
       <main>
-        <section class="d-flex justify-content-center flex-wrap section-card-descuento">
-          <div class="border border-primary card-descuento d-flex justify-content-center flex-column align-items-center p-2">
+        <section
+          class="d-flex justify-content-center flex-wrap section-card-descuento"
+        >
+          <div
+            class="border border-primary card-descuento d-flex justify-content-center flex-column align-items-center p-2"
+          >
             <h5>Estudiante</h5>
             <p>Tienen un descuento</p>
             <p class="fw-bold">80%</p>
             <p class="tamaño-presentar">* presentar documentación</p>
           </div>
-          <div class="border border-info card-descuento d-flex justify-content-center flex-column align-items-center p-2">
+          <div
+            class="border border-info card-descuento d-flex justify-content-center flex-column align-items-center p-2"
+          >
             <h5>Trainee</h5>
             <p>Tienen un descuento</p>
             <p class="fw-bold">50%</p>
             <p class="tamaño-presentar">* presentar documentación</p>
           </div>
-          <div class="border border-warning card-descuento d-flex justify-content-center flex-column align-items-center p-2">
+          <div
+            class="border border-warning card-descuento d-flex justify-content-center flex-column align-items-center p-2"
+          >
             <h5>Junior</h5>
             <p>Tienen un descuento</p>
             <p class="fw-bold">15%</p>
@@ -90,35 +100,84 @@
           </div>
         </section>
         <section class="text-center">
-            <p class="m-0 mt-1 palabra-venta">VENTA</p>
-            <h2>VALOR DE TICKET $200</h2>
+          <p class="m-0 mt-1 palabra-venta">VENTA</p>
+          <h2>VALOR DE TICKET $200</h2>
         </section>
-        <section>
-            <form>
-                <div>
-                    <label class="label">
-                        <input class="input" type="text" name="Nombre" placeholder="Nombre" />
-                      </label>
-                      <label class="label">
-                        <input class="input" type="text" name="Apellido" placeholder="Apellido" />
-                      </label>
-                </div>
-                <label class="label">
-                    <input class="input" type="email" name="Correo" placeholder="Correo" />
-                  </label>
-                  <div>
-                    <label class="label">Cantidad
-                        <input class="input" type="number" name="Cantidad" placeholder="Cantidad" />
-                      </label>
-                      <label class="label">Categoria
-                        <select name="" id="">
-                            <option value="estudiante">Estudiante</option>
-                                    <option value="trainee">Trainee</option>
-                                    <option value="junior">Junior</option>
-                        </select>
-                      </label>
-                  </div>
-            </form>
+        <section class="section-form">
+          <form class="form-compra">
+            <div class="row g-2 mb-3 justify-content-center">
+              <label class="col-12 col-md-6">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="campoNombre"
+                  id="campoNombre"
+                  placeholder="Nombre"
+                />
+              </label>
+              <label class="col-12 col-md-6">
+                <input
+                  class="col-12 col-md-6 form-control"
+                  type="text"
+                  name="campoApellido"
+                  id="campoApellido"
+                  placeholder="Apellido"
+                />
+              </label>
+            </div>
+            <div class="row g-2 mb-2">
+              <label class="col-12">
+                <input
+                  type="email"
+                  class="col-12 form-control"
+                  name="campoEmail"
+                  id="campoEmail"
+                  placeholder="correo@electronico.com"
+                />
+              </label>
+            </div>
+            <div class="row g-0 gy-2 gx-2 mb-3">
+              <div class="col-12 col-md-6">
+                <label class="cantidad-cat" for="campoCantidad">Cantidad</label>
+                <input
+                  id="campoCantidad"
+                  type="number"
+                  class="col-12 col-md-6 form-control"
+                  name="campoCantidad"
+                  placeholder="cantidad"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="cantidad-cat" for="campoCategoria">Categoria</label>
+                <select
+                  id="campoCategoria"
+                  class="col-12 col-md-6 form-control"
+                  name="campoCategoria"
+                >
+                  <option value="estudiante">Estudiante</option>
+                  <option value="trainee">Trainee</option>
+                  <option value="junior">Junior</option>
+                </select>
+              </div>
+            </div>
+            <div class="row justify-content-between total p-3 mb-3">
+              <div class="col-6">
+                  Total a pagar:
+              </div>
+              <div id="campoTotal" class="col-6 text-end"></div>
+              <div id="advertencia" class="text-danger d-none">
+                  * Antes de efectuar la compra recuerde completar los datos personales
+              </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+                <button id="botonReset" class="btn btn-success form-control" type="reset">Borrar</button>
+            </div>
+            <div class="col-12 col-md-6">
+                <button id="botonResumen" class="btn btn-success form-control" type="button">Resumen</button>
+            </div>
+        </div>
+          </form>
         </section>
       </main>
       <!-- ------------------------------------------------ -->
