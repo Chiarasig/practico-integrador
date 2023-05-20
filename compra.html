@@ -16,8 +16,8 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-navbar">
-        <div class="container-fluid mx-auto container-nav-button">
+      <nav class="navbar navbar-expand-lg bg-navbar nav-contenedor-compra">
+        <div class="container-fluid mx-auto container-nav-button navbar-compra">
           <div class="d-flex justify-content-center align-items-center">
             <p class="text-white fs-5 tittle-logo">Conf Bs As</p>
           </div>
@@ -33,7 +33,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse me-0 header3"
+            class="collapse navbar-collapse me-0 header3 navbar-botones"
             id="navbarTogglerDemo02"
           >
             <ul class="navbar-nav menu3">
@@ -148,7 +148,9 @@
                 />
               </div>
               <div class="col-12 col-md-6">
-                <label class="cantidad-cat" for="campoCategoria">Categoria</label>
+                <label class="cantidad-cat" for="campoCategoria"
+                  >Categoria</label
+                >
                 <select
                   id="campoCategoria"
                   class="col-12 col-md-6 form-control"
@@ -160,23 +162,34 @@
                 </select>
               </div>
             </div>
-            <div class="row justify-content-between total p-3 mb-3">
-              <div class="col-6">
-                  Total a pagar:
-              </div>
+            <div class="justify-content-between total mb-3">
+              <div class="col-6 ">Total a pagar: $</div>
               <div id="campoTotal" class="col-6 text-end"></div>
               <div id="advertencia" class="text-danger d-none">
-                  * Antes de efectuar la compra recuerde completar los datos personales
+                * Antes de efectuar la compra recuerde completar los datos
+                personales
               </div>
-          </div>
-          <div class="row g-3">
-            <div class="col-12 col-md-6">
-                <button id="botonReset" class="btn btn-success form-control" type="reset">Borrar</button>
             </div>
-            <div class="col-12 col-md-6">
-                <button id="botonResumen" class="btn btn-success form-control" type="button">Resumen</button>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <button
+                  id="botonReset"
+                  class="btn btn-form-comprar form-control"
+                  type="reset"
+                >
+                  Borrar
+                </button>
+              </div>
+              <div class="col-12 col-md-6">
+                <button
+                  id="botonResumen"
+                  class="btn btn-form-comprar form-control"
+                  type="button"
+                >
+                  Resumen
+                </button>
+              </div>
             </div>
-        </div>
           </form>
         </section>
       </main>

@@ -383,8 +383,24 @@
 }
 
 /*-------------------Compra-----------------------*/
+.nav-contenedor-compra{
+  height: 3rem;
+}
+
+.navbar-compra{
+  padding-left: 6%;
+}
+
+.navbar-botones{
+  padding-left: 32%;
+}
+
 .text-compra-nav {
-  color: greenyellow;
+  color: #95c43f;
+}
+
+.text-compra-nav:hover{
+  color: #95c43f;
 }
 
 .section-card-descuento {
@@ -425,8 +441,25 @@
 }
 
 .total{
-  background-color: aquamarine;
-  color: blue;
+  background-color: rgba(204,229,255,255);
+  color: #084c92;
+  height: 3rem;
+  border-radius: 5px;
+  border: 10px solid rgba(204,229,255,255);
+  display: flex;
+  padding-left: 0.5rem;
+}
+
+.btn-form-comprar{
+  background-color: #97c93e;
+  color: white;
+}
+
+.btn-form-comprar:hover{
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 2px 8px green;
+  transition: all 0.2s ease;
+  background-color: #97c93e;
 }
 
 @media screen and (max-width: 1000px) {
