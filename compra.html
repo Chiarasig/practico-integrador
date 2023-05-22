@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./img/codoacodo.png" type="image/x-icon" />
-    <title>Document</title>
+    <title>Codo a Codo/Integrador Frontend</title>
   </head>
   <body>
     <header>
@@ -68,7 +68,6 @@
           </div>
         </div>
       </nav>
-      <!-- ------------------------------------------------ -->
       <main>
         <section
           class="d-flex justify-content-center flex-wrap section-card-descuento"
@@ -103,24 +102,26 @@
           <h2>VALOR DE TICKET $200</h2>
         </section>
         <section class="section-form">
-          <form class="form-compra">
+          <form class="form-compra" id="formulario">
             <div class="row g-2 mb-3 justify-content-center">
               <label class="col-12 col-md-6">
                 <input
                   class="form-control"
                   type="text"
-                  name="campoNombre"
-                  id="campoNombre"
+                  name="nombre"
+                  id="nombre"
                   placeholder="Nombre"
+                  required
                 />
               </label>
               <label class="col-12 col-md-6">
                 <input
                   class="col-12 col-md-6 form-control"
                   type="text"
-                  name="campoApellido"
-                  id="campoApellido"
+                  name="apellido"
+                  id="apellido"
                   placeholder="Apellido"
+                  required
                 />
               </label>
             </div>
@@ -129,31 +130,32 @@
                 <input
                   type="email"
                   class="col-12 form-control"
-                  name="campoEmail"
-                  id="campoEmail"
+                  name="mail"
+                  id="mail"
                   placeholder="correo@electronico.com"
+                  required
                 />
               </label>
             </div>
             <div class="row g-0 gy-2 gx-2 mb-3">
               <div class="col-12 col-md-6">
-                <label class="cantidad-cat" for="campoCantidad">Cantidad</label>
+                <label class="cantidad-cat" for="cantidad">Cantidad</label>
                 <input
-                  id="campoCantidad"
+                  id="cantidad"
                   type="number"
                   class="col-12 col-md-6 form-control"
-                  name="campoCantidad"
+                  name="cantidad"
                   placeholder="cantidad"
                 />
               </div>
               <div class="col-12 col-md-6">
-                <label class="cantidad-cat" for="campoCategoria"
+                <label class="cantidad-cat" for="categoria"
                   >Categoria</label
                 >
                 <select
-                  id="campoCategoria"
+                  id="mi-select"
                   class="col-12 col-md-6 form-control"
-                  name="campoCategoria"
+                  name="categoria"
                 >
                   <option value="estudiante">Estudiante</option>
                   <option value="trainee">Trainee</option>
@@ -163,16 +165,12 @@
             </div>
             <div class="justify-content-between total mb-3">
               <div class="col-6 ">Total a pagar: $</div>
-              <div id="campoTotal" class="col-6 text-end"></div>
-              <div id="advertencia" class="text-danger d-none">
-                * Antes de efectuar la compra recuerde completar los datos
-                personales
-              </div>
+              <div id="resultado" class="col-6 text-end"></div>
             </div>
             <div class="row g-3">
               <div class="col-12 col-md-6">
                 <button
-                  id="botonReset"
+                  id="boton-reset"
                   class="btn btn-form-comprar form-control"
                   type="reset"
                 >
@@ -181,7 +179,7 @@
               </div>
               <div class="col-12 col-md-6">
                 <button
-                  id="botonResumen"
+                  id="boton-calcular"
                   class="btn btn-form-comprar form-control"
                   type="button"
                 >
@@ -192,7 +190,6 @@
           </form>
         </section>
       </main>
-      <!-- ------------------------------------------------ -->
       <footer class="footer">
         <a class="link-footer boton-footer" href="#"
           >Preguntas <br />
@@ -208,6 +205,7 @@
         <a class="link-footer boton-footer" href="#">Privacidad</a>
         <a class="link-footer boton-footer" href="#">Estudiantes</a>
       </footer>
+      <script src="./js/compra.js"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
