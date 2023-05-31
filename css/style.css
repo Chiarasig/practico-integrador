@@ -108,6 +108,15 @@
   border: 7px solid white;
 }
 
+.botones-conf{
+  color: white;
+  text-decoration: none;
+}
+
+.botones-conf:hover{
+  color: white;
+}
+
 .boton-comprar {
   background-color: rgba(43, 167, 70, 255);
   color: white;
